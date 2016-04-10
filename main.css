@@ -1,0 +1,31 @@
+.dragableList {
+    position: relative;
+    width: 300px;
+}
+
+.dragableList > li {
+    width: 300px;
+    height: 50px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    list-style: none;
+    transition: all 0.5s linear 0;
+}
+
+.dragableList > li:first-child {
+    border-top: 1px solid #000;
+}
+
+.dragableList > li:hover {
+    position: absolute;
+    margin-left: 40px;
+    left: -2px;
+    top: -2px;
+    width: 304px;
+    height: 54px;
+    box-shadow: 1px 1px 4px #7c7e7c;
+}
